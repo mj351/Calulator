@@ -8,3 +8,13 @@ C:\Users\mj351\source\repos\Calulator\Calulator\obj\Debug\Calulator.csproj.Gener
 C:\Users\mj351\source\repos\Calulator\Calulator\obj\Debug\Calulator.csproj.CoreCompileInputs.cache
 C:\Users\mj351\source\repos\Calulator\Calulator\obj\Debug\Calulator.exe
 C:\Users\mj351\source\repos\Calulator\Calulator\obj\Debug\Calulator.pdb
+C:\Users\mj351\OneDrive - Canterbury Christ Church University\Software Engineering\Calulator\Calulator\bin\Debug\Calulator.exe.config
+C:\Users\mj351\OneDrive - Canterbury Christ Church University\Software Engineering\Calulator\Calulator\bin\Debug\Calulator.exe
+C:\Users\mj351\OneDrive - Canterbury Christ Church University\Software Engineering\Calulator\Calulator\bin\Debug\Calulator.pdb
+C:\Users\mj351\OneDrive - Canterbury Christ Church University\Software Engineering\Calulator\Calulator\obj\Debug\Calulator.csprojAssemblyReference.cache
+C:\Users\mj351\OneDrive - Canterbury Christ Church University\Software Engineering\Calulator\Calulator\obj\Debug\Calulator.Form1.resources
+C:\Users\mj351\OneDrive - Canterbury Christ Church University\Software Engineering\Calulator\Calulator\obj\Debug\Calulator.Properties.Resources.resources
+C:\Users\mj351\OneDrive - Canterbury Christ Church University\Software Engineering\Calulator\Calulator\obj\Debug\Calulator.csproj.GenerateResource.cache
+C:\Users\mj351\OneDrive - Canterbury Christ Church University\Software Engineering\Calulator\Calulator\obj\Debug\Calulator.csproj.CoreCompileInputs.cache
+C:\Users\mj351\OneDrive - Canterbury Christ Church University\Software Engineering\Calulator\Calulator\obj\Debug\Calulator.exe
+C:\Users\mj351\OneDrive - Canterbury Christ Church University\Software Engineering\Calulator\Calulator\obj\Debug\Calulator.pdb
