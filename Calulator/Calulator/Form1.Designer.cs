@@ -46,11 +46,11 @@
             this.divisionButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.resultOutput = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.PMbutton = new System.Windows.Forms.Button();
+            this.CEbutton = new System.Windows.Forms.Button();
+            this.percentageButton = new System.Windows.Forms.Button();
+            this.backSpace = new System.Windows.Forms.Button();
+            this.squaredButton = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -60,7 +60,7 @@
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Algerian", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(9, 275);
+            this.button1.Location = new System.Drawing.Point(9, 272);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(69, 43);
             this.button1.TabIndex = 0;
@@ -240,13 +240,13 @@
             // multiplyButton
             // 
             this.multiplyButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.multiplyButton.Font = new System.Drawing.Font("Algerian", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multiplyButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.multiplyButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.multiplyButton.Location = new System.Drawing.Point(234, 176);
             this.multiplyButton.Name = "multiplyButton";
             this.multiplyButton.Size = new System.Drawing.Size(69, 43);
             this.multiplyButton.TabIndex = 14;
-            this.multiplyButton.Text = "X";
+            this.multiplyButton.Text = "×";
             this.multiplyButton.UseVisualStyleBackColor = false;
             this.multiplyButton.Click += new System.EventHandler(this.multiplyButton_Click);
             // 
@@ -287,65 +287,70 @@
             this.resultOutput.Text = "0";
             this.resultOutput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // button10
+            // PMbutton
             // 
-            this.button10.BackColor = System.Drawing.Color.White;
-            this.button10.Font = new System.Drawing.Font("Algerian", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button10.Location = new System.Drawing.Point(9, 321);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(69, 43);
-            this.button10.TabIndex = 18;
-            this.button10.Text = "+/-";
-            this.button10.UseVisualStyleBackColor = false;
+            this.PMbutton.BackColor = System.Drawing.Color.White;
+            this.PMbutton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PMbutton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.PMbutton.Location = new System.Drawing.Point(9, 321);
+            this.PMbutton.Name = "PMbutton";
+            this.PMbutton.Size = new System.Drawing.Size(69, 43);
+            this.PMbutton.TabIndex = 18;
+            this.PMbutton.Text = "± ";
+            this.PMbutton.UseVisualStyleBackColor = false;
+            this.PMbutton.Click += new System.EventHandler(this.PMbutton_Click);
             // 
-            // button11
+            // CEbutton
             // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button11.Font = new System.Drawing.Font("Algerian", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button11.Location = new System.Drawing.Point(84, 78);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(69, 43);
-            this.button11.TabIndex = 19;
-            this.button11.Text = "CE";
-            this.button11.UseVisualStyleBackColor = false;
+            this.CEbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.CEbutton.Font = new System.Drawing.Font("Algerian", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CEbutton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CEbutton.Location = new System.Drawing.Point(84, 78);
+            this.CEbutton.Name = "CEbutton";
+            this.CEbutton.Size = new System.Drawing.Size(69, 43);
+            this.CEbutton.TabIndex = 19;
+            this.CEbutton.Text = "CE";
+            this.CEbutton.UseVisualStyleBackColor = false;
+            this.CEbutton.Click += new System.EventHandler(this.CEbutton_Click);
             // 
-            // button12
+            // percentageButton
             // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button12.Font = new System.Drawing.Font("Algerian", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button12.Location = new System.Drawing.Point(9, 78);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(69, 43);
-            this.button12.TabIndex = 20;
-            this.button12.Text = "%";
-            this.button12.UseVisualStyleBackColor = false;
+            this.percentageButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.percentageButton.Font = new System.Drawing.Font("Algerian", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.percentageButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.percentageButton.Location = new System.Drawing.Point(9, 78);
+            this.percentageButton.Name = "percentageButton";
+            this.percentageButton.Size = new System.Drawing.Size(69, 43);
+            this.percentageButton.TabIndex = 20;
+            this.percentageButton.Text = "%";
+            this.percentageButton.UseVisualStyleBackColor = false;
+            this.percentageButton.Click += new System.EventHandler(this.percentageButton_Click);
             // 
-            // button13
+            // backSpace
             // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button13.Font = new System.Drawing.Font("Algerian", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button13.Location = new System.Drawing.Point(234, 78);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(69, 43);
-            this.button13.TabIndex = 21;
-            this.button13.Text = "Delete";
-            this.button13.UseVisualStyleBackColor = false;
+            this.backSpace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.backSpace.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backSpace.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.backSpace.Location = new System.Drawing.Point(234, 78);
+            this.backSpace.Name = "backSpace";
+            this.backSpace.Size = new System.Drawing.Size(69, 43);
+            this.backSpace.TabIndex = 21;
+            this.backSpace.Text = " ≤  ";
+            this.backSpace.UseVisualStyleBackColor = false;
+            this.backSpace.Click += new System.EventHandler(this.backSpace_Click);
             // 
-            // button14
+            // squaredButton
             // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button14.Font = new System.Drawing.Font("Algerian", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button14.Location = new System.Drawing.Point(159, 128);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(69, 43);
-            this.button14.TabIndex = 22;
-            this.button14.Text = "√";
-            this.button14.UseVisualStyleBackColor = false;
+            this.squaredButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.squaredButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.squaredButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.squaredButton.Location = new System.Drawing.Point(159, 128);
+            this.squaredButton.Name = "squaredButton";
+            this.squaredButton.Size = new System.Drawing.Size(69, 43);
+            this.squaredButton.TabIndex = 22;
+            this.squaredButton.Text = " √";
+            this.squaredButton.UseVisualStyleBackColor = false;
+            this.squaredButton.Click += new System.EventHandler(this.squaredButton_Click);
             // 
             // button15
             // 
@@ -358,6 +363,7 @@
             this.button15.TabIndex = 23;
             this.button15.Text = "X2";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -370,19 +376,21 @@
             this.button16.TabIndex = 24;
             this.button16.Text = "1/x";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 373);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(307, 371);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.squaredButton);
+            this.Controls.Add(this.backSpace);
+            this.Controls.Add(this.percentageButton);
+            this.Controls.Add(this.CEbutton);
+            this.Controls.Add(this.PMbutton);
             this.Controls.Add(this.resultOutput);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.divisionButton);
@@ -402,7 +410,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Standard";
+            this.Text = "Calculator";
             this.ResumeLayout(false);
 
         }
@@ -427,11 +435,11 @@
         private System.Windows.Forms.Button divisionButton;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Label resultOutput;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button PMbutton;
+        private System.Windows.Forms.Button CEbutton;
+        private System.Windows.Forms.Button percentageButton;
+        private System.Windows.Forms.Button backSpace;
+        private System.Windows.Forms.Button squaredButton;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
     }

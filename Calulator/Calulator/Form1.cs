@@ -17,10 +17,13 @@ namespace Calulator
         string secound = "";   //string storing secound input
         char function;         //char to store type of function
         double result = 0.0;   //To hold the result
+        double s;
+
         public Form1()
         {
             InitializeComponent();
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -132,7 +135,6 @@ namespace Calulator
             secound = "";
             input = "";
             resultOutput.Text = "0";
-
         }
         private void equalButton_Click(object sender, EventArgs e)
         {
@@ -174,6 +176,62 @@ namespace Calulator
                 }
             }
 
+        }
+
+        private void backSpace_Click(object sender, EventArgs e)
+            //Back Space Button
+        {
+           if (resultOutput.Text.Length > 0)
+            {
+                resultOutput.Text = resultOutput.Text.Remove(resultOutput.Text.Length - 1, 1);
+            }
+           
+           if (resultOutput.Text == "")
+            {
+                resultOutput.Text = "0";
+            }
+        }
+
+        private void CEbutton_Click(object sender, EventArgs e)
+        {
+            resultOutput.Text = "0";
+
+            string f, s;
+            f = Convert.ToString(first);
+            s = Convert.ToString(secound);
+
+            f = "";
+            s = "";
+        }
+
+        private void percentageButton_Click(object sender, EventArgs e)
+        {
+            s = Convert.ToDouble(resultOutput.Text) / Convert.ToDouble(100);
+            resultOutput.Text = System.Convert.ToString(s);
+        }
+
+        private void squaredButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            s = Convert.ToDouble(resultOutput.Text) * Convert.ToDouble(100);
+            resultOutput.Text = System.Convert.ToString(s);
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+
+            s = Convert.ToDouble(1.0 / Convert.ToDouble(resultOutput.Text));
+            resultOutput.Text = System.Convert.ToString(s);
+        }
+
+        private void PMbutton_Click(object sender, EventArgs e)
+        {
+            s = Convert.ToDouble(resultOutput.Text);
+            resultOutput.Text = Convert.ToString(-1 * s);
         }
     }
 }
