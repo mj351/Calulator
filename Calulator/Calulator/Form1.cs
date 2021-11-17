@@ -148,18 +148,21 @@ namespace Calulator
             if (function == '+')
             {
                 result = num1 + num2;
+                input = result.ToString();
                 resultOutput.Text = result.ToString();
             }
             //subtract
             else if (function == '-')
             {
                 result = num1 - num2;
+                input = result.ToString();
                 resultOutput.Text = result.ToString();
             }
             //multiply
             else if (function == '*')
             {
                 result = num1 * num2;
+                input = result.ToString();
                 resultOutput.Text = result.ToString();
             }
             //division
@@ -168,6 +171,7 @@ namespace Calulator
                 if (num2 != 0)
                 {
                     result = num1 / num2;
+                    input = result.ToString();
                     resultOutput.Text = result.ToString();
                 }
                 else
