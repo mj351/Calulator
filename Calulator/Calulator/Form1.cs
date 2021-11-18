@@ -131,9 +131,7 @@ namespace Calulator
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-            first = "";
-            secound = "";
-            input = "";
+            
             resultOutput.Text = "0";
         }
         private void equalButton_Click(object sender, EventArgs e)
@@ -185,11 +183,9 @@ namespace Calulator
         private void backSpace_Click(object sender, EventArgs e)
             //Back Space Button
         {
-           if (resultOutput.Text.Length > 0)
-            {
-                resultOutput.Text = resultOutput.Text.Remove(resultOutput.Text.Length - 1, 1);
-            }
-           
+            int index = resultOutput.Text.Length;
+            index--;
+            resultOutput.Text = resultOutput.Text.Remove(index);
            if (resultOutput.Text == "")
             {
                 resultOutput.Text = "0";
@@ -216,7 +212,11 @@ namespace Calulator
 
         private void squaredButton_Click(object sender, EventArgs e)
         {
-            
+            result = double.Parse(resultOutput.Text);
+            result = Math.Sqrt(result);
+            resultOutput.Text = result.ToString();
+
+
         }
 
         private void button15_Click(object sender, EventArgs e)
@@ -228,14 +228,167 @@ namespace Calulator
         private void button16_Click(object sender, EventArgs e)
         {
 
-            s = Convert.ToDouble(1.0 / Convert.ToDouble(resultOutput.Text));
-            resultOutput.Text = System.Convert.ToString(s);
+            result = double.Parse(resultOutput.Text);
+            result = 1 / result;
+            resultOutput.Text = result.ToString();
         }
 
         private void PMbutton_Click(object sender, EventArgs e)
         {
-            s = Convert.ToDouble(resultOutput.Text);
-            resultOutput.Text = Convert.ToString(-1 * s);
+            result = double.Parse(resultOutput.Text);
+            result = result * -1;
+            resultOutput.Text = result.ToString();
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            treeView1.Visible = false;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            treeView1.Visible = true;
+        }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e) 
+        {
+            if (e.Node.Name == "Node2")
+            {
+                Title.Text = "Standard";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node23") 
+            {
+                Title.Text = "Scientific";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node25") 
+            {
+                Title.Text = "Programmer";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node27") 
+            {
+                Title.Text = "Data Calculation";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node31")
+            {
+                Title.Text = "Currency";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node33") 
+            {
+                Title.Text = "Volume";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node35") 
+            {
+                Title.Text = "Length";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node37") 
+            {
+                Title.Text = "Weight and Mass";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node39") 
+            {
+                Title.Text = "Temperature";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node41") 
+            {
+                Title.Text = "Energy";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node43") 
+            {
+                Title.Text = "Area";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node45") 
+            {
+                Title.Text = "Speed";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node47") 
+            {
+                Title.Text = "Time";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node49") 
+            {
+                Title.Text = "Power";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node51") 
+            {
+                Title.Text = "Data";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node53") 
+            {
+                Title.Text = "Pressure";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node55") 
+            {
+                Title.Text = "Angle";
+                treeView1.Visible = false;
+            }
+            if (e.Node.Name == "Node57") 
+            {
+                Title.Text = "About";
+                treeView1.Visible = false;
+            }
+
+        }
+
+        private void offButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void logButton_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(resultOutput.Text);
+            result = Math.Log10(result);
+            resultOutput.Text = result.ToString();
+        }
+
+        private void expButton_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(resultOutput.Text);
+            result = Math.Exp(result);
+            resultOutput.Text = result.ToString();
+        }
+
+        private void piButton_Click(object sender, EventArgs e)
+        {
+            result = Math.PI;
+            resultOutput.Text = result.ToString();
+        }
+
+        private void modButton_Click(object sender, EventArgs e)
+        {
+            
+            result = double.Parse(resultOutput.Text);
+            result = (result % double.Parse(resultOutput.Text));
+            resultOutput.Text = result.ToString();
+        }
+
+        private void cubeButton_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(resultOutput.Text);
+            result = Math.Pow(result, 3);
+            resultOutput.Text = result.ToString();
         }
     }
 }
