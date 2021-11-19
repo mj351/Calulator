@@ -96,8 +96,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Title = new System.Windows.Forms.Label();
-            this.lblShowOp = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.cubeButton = new System.Windows.Forms.Button();
             this.piButton = new System.Windows.Forms.Button();
@@ -354,7 +352,7 @@
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearButton.Font = new System.Drawing.Font("Algerian", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clearButton.Location = new System.Drawing.Point(166, 205);
+            this.clearButton.Location = new System.Drawing.Point(91, 206);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(69, 43);
             this.clearButton.TabIndex = 16;
@@ -396,7 +394,7 @@
             this.CEbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CEbutton.Font = new System.Drawing.Font("Algerian", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CEbutton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.CEbutton.Location = new System.Drawing.Point(91, 205);
+            this.CEbutton.Location = new System.Drawing.Point(16, 207);
             this.CEbutton.Name = "CEbutton";
             this.CEbutton.Size = new System.Drawing.Size(69, 43);
             this.CEbutton.TabIndex = 19;
@@ -426,7 +424,7 @@
             this.backSpace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backSpace.Font = new System.Drawing.Font("Wingdings", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.backSpace.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.backSpace.Location = new System.Drawing.Point(316, 206);
+            this.backSpace.Location = new System.Drawing.Point(316, 207);
             this.backSpace.Name = "backSpace";
             this.backSpace.Size = new System.Drawing.Size(69, 43);
             this.backSpace.TabIndex = 21;
@@ -513,42 +511,18 @@
             // 
             this.Title.AutoSize = true;
             this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title.Location = new System.Drawing.Point(87, 34);
+            this.Title.Location = new System.Drawing.Point(77, 34);
             this.Title.Name = "Title";
             this.Title.Size = new System.Drawing.Size(83, 20);
             this.Title.TabIndex = 29;
             this.Title.Text = "Standard";
-            // 
-            // lblShowOp
-            // 
-            this.lblShowOp.AutoSize = true;
-            this.lblShowOp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowOp.ForeColor = System.Drawing.Color.Black;
-            this.lblShowOp.Location = new System.Drawing.Point(134, 531);
-            this.lblShowOp.Name = "lblShowOp";
-            this.lblShowOp.Size = new System.Drawing.Size(51, 16);
-            this.lblShowOp.TabIndex = 30;
-            this.lblShowOp.Text = "label6";
-            // 
-            // button10
-            // 
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Wingdings 2", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.button10.Location = new System.Drawing.Point(220, 520);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(53, 37);
-            this.button10.TabIndex = 32;
-            this.button10.Text = "";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // treeView1
             // 
             this.treeView1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treeView1.LineColor = System.Drawing.Color.Beige;
-            this.treeView1.Location = new System.Drawing.Point(10, 57);
+            this.treeView1.Location = new System.Drawing.Point(-5, 57);
             this.treeView1.Name = "treeView1";
             treeNode1.Name = "Node0";
             treeNode1.Text = "Calculator";
@@ -668,7 +642,7 @@
             treeNode37,
             treeNode38,
             treeNode39});
-            this.treeView1.Size = new System.Drawing.Size(175, 304);
+            this.treeView1.Size = new System.Drawing.Size(165, 304);
             this.treeView1.TabIndex = 33;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
@@ -754,7 +728,7 @@
             this.offButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.offButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.offButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.offButton.Location = new System.Drawing.Point(16, 206);
+            this.offButton.Location = new System.Drawing.Point(166, 205);
             this.offButton.Name = "offButton";
             this.offButton.Size = new System.Drawing.Size(69, 43);
             this.offButton.TabIndex = 39;
@@ -767,7 +741,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(779, 569);
+            this.ClientSize = new System.Drawing.Size(402, 510);
             this.Controls.Add(this.offButton);
             this.Controls.Add(this.modButton);
             this.Controls.Add(this.expButton);
@@ -775,8 +749,6 @@
             this.Controls.Add(this.piButton);
             this.Controls.Add(this.cubeButton);
             this.Controls.Add(this.treeView1);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.lblShowOp);
             this.Controls.Add(this.Title);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -845,8 +817,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label Title;
-        private System.Windows.Forms.Label lblShowOp;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Button cubeButton;
         private System.Windows.Forms.Button piButton;

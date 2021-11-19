@@ -131,8 +131,10 @@ namespace Calulator
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-            
             resultOutput.Text = "0";
+            input = "";
+            first = "";
+            secound = "";
         }
         private void equalButton_Click(object sender, EventArgs e)
         {
@@ -241,10 +243,6 @@ namespace Calulator
 
         }
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -378,9 +376,10 @@ namespace Calulator
 
         private void modButton_Click(object sender, EventArgs e)
         {
-            
+            double num1;
+            double.TryParse(first, out num1);
             result = double.Parse(resultOutput.Text);
-            result = (result % double.Parse(resultOutput.Text));
+            result = (num1 % double.Parse(resultOutput.Text));
             resultOutput.Text = result.ToString();
         }
 
